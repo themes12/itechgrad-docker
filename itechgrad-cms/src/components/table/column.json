@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_table_columns",
+  "info": {
+    "displayName": "Column",
+    "icon": "bulletList",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "content": {
+      "type": "richtext"
+    }
+  }
+}

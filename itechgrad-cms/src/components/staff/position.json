@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_staff_positions",
+  "info": {
+    "displayName": "position",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

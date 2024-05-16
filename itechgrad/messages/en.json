@@ -1,0 +1,53 @@
+{
+    "Index": {
+        "header1": "Master and Ph.D Program in",
+        "header2": "Computer Science CMU",
+        "header3": "Department of Computer Science",
+        "header4": "Faculty of Science, Chiang Mai University",
+        "button1": "Programs",
+        "header5": "Announcement",
+        "header6": "Congratulations",
+        "footer1": "Address",
+        "footer2": "Department of Computer Science Faculty of Science Chiang Mai University 239 Huay Kaew Road, Suthep Subdistrict, Mueang District,Chiang Mai Province 50200",
+        "footer3": "Contact us",
+        "footer4": "Phone",
+        "footer5": "Administrator",
+        "footer6": "Press 0 or 101",
+        "footer7": "Master'Degree-Ph.D Program",
+        "footer8": "Press 105",
+        "footer9": "E-mail",
+        "footer10": "Follow us"
+    },
+    "Research": {
+        "header1": "Research",
+        "header2": "at the",
+        "header3": "Computer Science CMU",
+        "header4": "The esteemed faculty members of the department",
+        "header5": "have archieved remarkable research contribution a multitude of discipline.",
+        "header6": "Reseacher"
+    },
+    "Annoucement": {
+        "header1": "Announcement",
+        "header2": "Announcement, News and Events of Computer Science CMU",
+        "button1": "All",
+        "button2": "Announcement",
+        "button3": "News",
+        "button4": "Congratulations",
+        "button5": "Events"
+    },
+    "Staff": {
+        "header1": "Academic Staff"
+    },
+    "Aboutus": {
+        "header1": "Master's degree program",
+        "body1": "Computer Science is a discipline that relies on knowledge and understanding of essential computer concepts, which are critical for effectively solving complex problems systematically and accurately. Additionally, it involves an understanding of applying data and information as a foundation and a commitment to keeping up with rapidly evolving technologies and contemporary techniques for swift and efficient operations to meet the needs of both the public and private sectors.",
+        "body2": "Students in this field can develop knowledge and expertise in various areas, such as software development, data science and technology, and computer networking. They have the potential to conduct high-quality research, solve problems, and continuously enhance themselves. This field provides qualifications and capabilities for employment and can be a valuable asset to all aspects of society.",
+        "button1": "view Master's program",
+        "header2": "PhD's degree program",
+        "body3": "The Doctor of Philosophy (Ph.D.) program in Computer Science aims to produce graduates who possess a deep understanding of the science, a thirst for knowledge, and a commitment to staying up-to-date with advancements in the field to continually develop themselves. They should have innovative and creative thinking abilities, be capable of conducting independent research, and contribute to the creation of new knowledge or innovations that hold value and have the potential to enhance society and the nation ethically.",
+        "button2": "view PhD's program"
+    },
+    "Program": {
+        "header1": "Program"
+    }
+}

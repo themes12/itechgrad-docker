@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_staff_research_interests",
+  "info": {
+    "displayName": "research_interest"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

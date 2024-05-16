@@ -1,0 +1,65 @@
+{
+  "kind": "collectionType",
+  "collectionName": "courses",
+  "info": {
+    "singularName": "course",
+    "pluralName": "courses",
+    "displayName": "Course",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "course_id": {
+      "type": "string",
+      "unique": false,
+      "required": true,
+      "pluginOptions": {}
+    },
+    "name_en": {
+      "type": "string",
+      "pluginOptions": {},
+      "unique": false,
+      "required": true
+    },
+    "credit": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {},
+      "component": "credit.credit",
+      "required": true
+    },
+    "prerequisite": {
+      "pluginOptions": {},
+      "type": "json",
+      "required": true
+    },
+    "description_en": {
+      "pluginOptions": {},
+      "type": "text",
+      "required": false
+    },
+    "is_open": {
+      "pluginOptions": {},
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "name_th": {
+      "pluginOptions": {},
+      "type": "string",
+      "required": true
+    },
+    "description_th": {
+      "pluginOptions": {},
+      "type": "text"
+    },
+    "degree": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::degree.degree"
+    }
+  }
+}

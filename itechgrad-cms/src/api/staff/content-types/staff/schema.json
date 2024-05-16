@@ -1,0 +1,91 @@
+{
+  "kind": "collectionType",
+  "collectionName": "staffs",
+  "info": {
+    "singularName": "staff",
+    "pluralName": "staffs",
+    "displayName": "Staff",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "pluginOptions": {},
+      "type": "string",
+      "required": true
+    },
+    "title": {
+      "pluginOptions": {},
+      "type": "string",
+      "required": false
+    },
+    "affiliation": {
+      "pluginOptions": {},
+      "type": "string"
+    },
+    "picture": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ],
+      "pluginOptions": {}
+    },
+    "job_type": {
+      "pluginOptions": {},
+      "type": "enumeration",
+      "enum": [
+        "academic",
+        "support"
+      ],
+      "required": true
+    },
+    "personal_web": {
+      "pluginOptions": {},
+      "type": "string"
+    },
+    "research_interest": {
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {},
+      "component": "staff.research-interest"
+    },
+    "position": {
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {},
+      "component": "staff.position"
+    },
+    "email": {
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {},
+      "component": "staff.email"
+    },
+    "telephone": {
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {},
+      "component": "staff.telephone"
+    },
+    "e_affiliation": {
+      "type": "string"
+    },
+    "e_title": {
+      "type": "string"
+    },
+    "e_name": {
+      "type": "string",
+      "required": false
+    },
+    "e_position": {
+      "type": "component",
+      "repeatable": true,
+      "component": "staff.position"
+    }
+  }
+}

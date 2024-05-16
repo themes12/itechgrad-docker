@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_staff_telephones",
+  "info": {
+    "displayName": "telephone",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "number": {
+      "type": "string",
+      "required": true
+    },
+    "extension": {
+      "type": "string"
+    }
+  }
+}

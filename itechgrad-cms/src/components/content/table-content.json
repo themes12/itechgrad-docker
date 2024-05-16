@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_content_table_contents",
+  "info": {
+    "displayName": "Table Content",
+    "icon": "layout",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": false
+    },
+    "header": {
+      "type": "component",
+      "repeatable": false,
+      "component": "table.row"
+    },
+    "rows": {
+      "type": "component",
+      "repeatable": true,
+      "component": "table.row"
+    }
+  }
+}
