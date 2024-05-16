@@ -7,7 +7,7 @@ services:
       context: ./itechgrad
       dockerfile: Dockerfile
     ports:
-      - "80:80"  # Adjust port if necessary
+      - "80:3000"  # Adjust port if necessary
     networks:
       - strapi
     depends_on:
