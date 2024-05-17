@@ -6,6 +6,10 @@ services:
     build:
       context: ./itechgrad
       dockerfile: Dockerfile
+    environment:
+      NEXT_PUBLIC_BASE_URL: ${NEXT_PUBLIC_BASE_URL}
+      NEXT_PUBLIC_API_URL: ${NEXT_PUBLIC_API_URL}
+      NEXT_STRAPI_URL: ${NEXT_STRAPI_URL}
     ports:
       - "80:3000"  # Adjust port if necessary
     networks:
@@ -25,29 +29,28 @@ services:
     depends_on:
       - strapiDB
     environment:
-      DATABASE_CLIENT: postgres
-      DATABASE_HOST: strapiDB
-      DATABASE_PORT: 5432
-      DATABASE_NAME: itechgrad
-      DATABASE_USERNAME: admin
-      DATABASE_PASSWORD: P@$$w0rd@1
-      APP_KEYS: w9QmpmbiduXAqi4F0ZsBCA==,flPBsJlGX+qzBTqwqsxhiQ==,wxY6ELNGCmg9cexdovRPDg==,oyv9YGw1RDDWuZQUtSL+SA==
-      API_TOKEN_SALT: sGiJAbQzaDB2vlffhhwiqw==
-      ADMIN_JWT_SECRET: fv3dDwk+uqB/k0W0Pmfhyg==
-      TRANSFER_TOKEN_SALT: KEmadvQO4OMYqa8exkvVzA==
-      JWT_SECRET: Jnw5/CRNwpLEbVKT7H3I2g==
-      NODE_ENV: production
+      DATABASE_CLIENT: ${DATABASE_CLIENT}
+      DATABASE_HOST: ${DATABASE_HOST}
+      DATABASE_PORT: ${DATABASE_PORT}
+      DATABASE_NAME: ${DATABASE_NAME}
+      DATABASE_USERNAME: ${DATABASE_USERNAME}
+      DATABASE_PASSWORD: ${DATABASE_PASSWORD}
+      APP_KEYS: ${APP_KEYS}
+      API_TOKEN_SALT: ${API_TOKEN_SALT}
+      ADMIN_JWT_SECRET: ${ADMIN_JWT_SECRET}
+      TRANSFER_TOKEN_SALT: ${TRANSFER_TOKEN_SALT}
+      JWT_SECRET: ${JWT_SECRET}
+      NODE_ENV: ${NODE_ENV}
 
   strapiDB:
     container_name: strapiDB
     platform: linux/amd64 #for platform error on Apple M1 chips
     restart: unless-stopped
-    env_file: .env
     image: postgres:12.0-alpine
     environment:
-      POSTGRES_USER: admin
-      POSTGRES_PASSWORD: P@$$w0rd@1
-      POSTGRES_DB: itechgrad
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
     volumes:
       - strapi-data:/var/lib/postgresql/data/
     ports:
