@@ -16,7 +16,7 @@ const ImgHeadline = (props: Props) => {
                     <Image
                         className="rounded h-auto w-max"
                         alt="mock up"
-                        src={`${process.env.NEXT_PUBLIC_IMAGE_BASE_URL}${props.img_url}`}
+                        src={`${process.env.NEXT_PUBLIC_BASE_URL}${props.img_url}`}
                     />
                 </div>
             </div>

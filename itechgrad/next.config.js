@@ -11,7 +11,6 @@ const nextConfig = {
     output: 'standalone',
 	env: {
        NEXT_PUBLIC_BASE_URL: process.env.NEXT_PUBLIC_BASE_URL,
-       NEXT_PUBLIC_IMAGE_BASE_URL: process.env.NEXT_PUBLIC_IMAGE_BASE_URL,
     },
 };
 

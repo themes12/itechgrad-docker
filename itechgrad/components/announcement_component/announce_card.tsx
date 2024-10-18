@@ -34,7 +34,7 @@ export const Announcement_card = ({ post }: { post: Post }) => {
                             <Image
                                 alt=""
                                 className="flex object-scale-down aspect-video h-auto w-auto"
-                                src={`${process.env.NEXT_PUBLIC_IMAGE_BASE_URL}${post.attributes.featured_image.data?.attributes.formats.medium?.url}`}
+                                src={`${process.env.NEXT_PUBLIC_BASE_URL}${post.attributes.featured_image.data?.attributes.formats.medium?.url}`}
                             />
                         </div>
                     </div>

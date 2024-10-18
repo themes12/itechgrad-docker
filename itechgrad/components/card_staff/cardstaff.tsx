@@ -31,7 +31,7 @@ export const CardStaff = ({
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 justify-items-center md:justify-items-start">
                     <Image
                     className="rounded-lg"
-                    src={`${process.env.NEXT_PUBLIC_IMAGE_BASE_URL}${staff.attributes.picture.data?.attributes.formats.small?.url}`}
+                    src={`${process.env.NEXT_PUBLIC_BASE_URL}${staff.attributes.picture.data?.attributes.formats.small?.url}`}
                     alt={staff.attributes.name}
                     />
 
