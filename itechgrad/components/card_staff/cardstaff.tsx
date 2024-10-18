@@ -31,7 +31,7 @@ export const CardStaff = ({
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 justify-items-center md:justify-items-start">
                     <Image
                     className="rounded-lg"
-                    src={`${process.env.NEXT_PUBLIC_BASE_URL}${staff.attributes.picture.data?.attributes.formats.small?.url}`}
+                    src={`${process.env.NEXT_PUBLIC_IMAGE_BASE_URL}${staff.attributes.picture.data?.attributes.formats.small?.url}`}
                     alt={staff.attributes.name}
                     />
 
@@ -75,7 +75,7 @@ export const CardStaff = ({
                         <div className="flex flex-col gap-3">
                             <div className="flex flex-row gap-4">
                                 <div>
-                                    <Image alt="Phone" src="/Phone.svg" radius="none" />
+                                    <Image alt="Phone" src="/phone.svg" radius="none" />
                                 </div>
                                 {staff.attributes.telephone && staff.attributes.telephone.map((value, index) => (
                                     <div key={index}>{value.number.toString()} with {value.extension}</div>
@@ -83,7 +83,7 @@ export const CardStaff = ({
                             </div>
                             <div className="flex flex-row gap-4 overflow-auto">
                                 <div>
-                                    <Image alt="Mail" src="/Mail.svg" />
+                                    <Image alt="Mail" src="/mail.svg" />
                                 </div>
                                 {staff.attributes.email && staff.attributes.email.map((value, index) => (
                                     <div key={index}>{value.email}</div>

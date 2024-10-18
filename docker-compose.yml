@@ -6,10 +6,9 @@ services:
     build:
       context: ./itechgrad
       dockerfile: Dockerfile
-    environment:
-      NEXT_PUBLIC_BASE_URL: ${NEXT_PUBLIC_BASE_URL}
-      NEXT_PUBLIC_API_URL: ${NEXT_PUBLIC_API_URL}
-      NEXT_STRAPI_URL: ${NEXT_STRAPI_URL}
+    # environment:
+    #   NEXT_PUBLIC_BASE_URL: ${NEXT_PUBLIC_BASE_URL}
+    #   NEXT_PUBLIC_IMAGE_BASE_URL: ${NEXT_PUBLIC_IMAGE_BASE_URL}
     ports:
       - "80:3000"  # Adjust port if necessary
     networks:

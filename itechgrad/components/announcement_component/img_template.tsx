@@ -17,7 +17,7 @@ const ImgTemplate = (props: Props) => {
                     <Image
                         key={index}
                         alt={value.attributes.alternativeText ?? ""}
-                        src={`${process.env.NEXT_PUBLIC_BASE_URL}${value.attributes.url}`}
+                        src={`${process.env.NEXT_PUBLIC_IMAGE_BASE_URL}${value.attributes.url}`}
                     />
                 ))}
             </Carousal>
